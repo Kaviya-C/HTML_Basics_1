@@ -1,0 +1,194 @@
+<!--file name should be small that is good practise so only i used index.html
+use w3c validator to see the errors and warning of html code...-->
+<!--shortcut key: 
+ select the text shift+alt+down arrow if use this same copied text paste below
+ select text press ctrl + d wherever that copied text there that all shows again again press ctrl+d to select that copied text of different lines then press backspace this wil be deleted.
+-->
+<!DOCTYPE html>
+<!--document type this indicates the version of the html-->
+<html lang="en">
+  <!--setting the language is good things to do the html code-->
+  <head>
+    <!--head is a container that contains style link  base meta  script elements these are the meta information this things not visible to browser-->
+    <meta charset="utf-8">
+    <!--character set utf 8 is good to use its like ascii code ..-->
+    <meta name="author" content="Kaviya">
+    <meta name="description" content="Learning HTML">
+    <title>First page</title>
+    <!--lets see about link tag ,it means link tag is to link the external source to the current document
+ rel mean relationship
+ href [hypertext reference]is an attribute -->
+    <link rel="icon" href="logo.jpeg" type="image/jpeg">
+    <!--how to get the icon on the top page title?? -->
+    <link rel="stylesheet" href="main.css" type="text/css" >
+    <!--this main.css are relatice url-->
+  </head>
+  <body>
+    <header>
+      <!--Link our own websites -->
+      <p><a href="about.html">About Me</a></p>
+      <br>
+      <nav>
+        <ul>
+          <li><a href="#first">Sample-1</a></li>
+          <li><a href="#second">Sample-2</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+    <!--chapter-3 text basics-->
+    Hello world!!!
+    <hr>
+
+    <h1>Learning</h1>
+    <p>Html start learning..it is still in progress</p>
+    <h2>HTML</h2>
+    <p>Now am in chapter-3 that is text basics in html</p>
+
+    <h3>Text Basics</h3>
+    <p>
+      Start the things is difficult once we start no one can stop us..!
+      <br>This is new line bcoz of br tag..
+    </p>
+
+    <hr>
+    <!--even though we give so many spaces in vs code that is not reflected in browser bcoz this is happens by white space collapsing if u really need new line then we can use br tag.. -->
+    <!--inline element and block level elements...
+ block means always start with new line and it occupy full width eg: p , h1 to h6 , li,ul,ol,table,div,pre,etc
+inline elements are the elements never start with new line and it did not occupy the full width Eg: em ,strong,i,span,a , img ,.etc-->
+    <!--if really need white space mean use html entities 
+eg:&nbsp  these are the entities used in eg:if we want to print the less than greater than symbols mean use html entities &lt this indicates less than symbol-->
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;White
+      space
+    </p>
+    <p>&lt; this is the less than symbol bcoz of HTML entites</p>
+    <p>&copy; this is copyright symbol</p>
+    <address>TamilNadu</address>
+    <!--this is address tag which automatically make the text as italic.. -->
+    <p>
+      I learn from <abbr title="mozila developer network">MDN</abbr>Resources
+    </p>
+    <hr>
+    <h2>Chapter-4 List Basics</h2>
+    <!--ordered list-->
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ol>
+    <!--unordered list-->
+    <ul>
+      <li>Bootstrap Framework</li>
+      <li>W3 Framework</li>
+    </ul>
+    <!--description list -->
+    <dl>
+      <dt>Html..</dt>
+      <dd>
+        HTML is easy to learn and happy to see the changes in the browser is
+        another mass part..
+      </dd>
+    </dl>
+    <hr>
+    <h2>Chapter-5 HTML Links</h2>
+    <!--here we use anchor tag that will link the external resources to the current document here href is an attribute that contains the resources target is another attribute this is used to redirect into new page or currrent page these all are things take care by target attribute-->
+    <p>
+      YouTube Channel:
+      <a href="https://www.youtube.com/" target="_blank">&nbsp;CLICK</a>
+    </p>
+    <!--this references called absolute url {we specify the complete address to share the resources}-->
+    <br>
+    <p>
+      Mozila FireFox:
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+        target="_blank"
+      >
+        MDN
+      </a>
+    </p>
+
+    <h3>How to bookmark the page??</h3>
+    <section id="first">
+      <h3>Sample-1</h3>
+      <p>
+        This article covers most of the ways you use CSS to add color to HTML
+        can be colored and what CSS properties to use when doing so. Includes
+        examples, links to palette-building tools, can be colored and what CSS
+        properties to can be colored and what CSS properties to use when doing
+        so. Includes examples, links to palette-building tools,use when doing
+        so. Includes examples, links to palette-building tools, can be colored
+        and what CSS properties to use when doing so. Includes examples can be
+        colored and what CSS properties to use when doing so. Includes examples,
+        links to palette-building tools can be colored and what CSS properties
+        to use when doing so. Includes examples, links to palette-building
+        tools,, links to palette-building tools,content, listing what parts of
+        HTML documents can be colored and what CSS properties to use when doing
+        so. Includes examples, links to palette-building tools, can be colored
+        and what CSS properties to use when doing so. Includes examples, links
+        to palette-building tools, can be colored and what CSS properties to use
+        when doing so. Includes examples, links to palette-building tools, can
+        be colored and what CSS properties to use when doing so. Includes
+        examples, links to palette-building tools, and more.
+      </p>
+    </section>
+
+    <section id="second">
+      <h3>Sample-2</h3>
+      <p>
+        This article covers most of the ways you use CSS to add color to HTML
+        content, listing what parts of HTML documents can be colored and what
+        CSS properties to use when doing so. Includes examples, links to
+        palette-building tools, can be colored and what CSS properties to use
+        when doing so. Includes examples, links to palette-building tools, can
+        be colored and what CSS properties to use when doing so. Includes
+        examples, links to palette-building tools, and more.
+      </p>
+    </section>
+
+    <!--Adding images in out html document by img tag contains src attribute there give url in this src {humility layout [mention height and width]}-->
+    <img
+      src="images/paris.jpg"
+      title="Favourite Spot"
+      alt="Image not available"
+      width="350"
+      height="300"
+    >
+    <figure>
+      <!--loading is an attribute in img tag-->
+      <img
+        src="images/enter.jpg"
+        alt="no image available"
+        title="France"
+        width="350"
+        height="300"
+        loading="lazy"
+      >
+      <!--loading attribute lazy mean each image take time whenever scrolling instead of loading all the images in starting we can use this attribute to make the site is faster responsive-->
+      <figcaption>France</figcaption>
+    </figure>
+    <figure>
+      <figcaption>HTML Code</figcaption>
+      <code>&lt;h1&gt;Hello world&lt;/h1&gt;</code>
+    </figure>
+
+    <!--choosing images in free websites are: 
+loremipsum.io
+UnSplash
+Pexels
+GratisoGraphy
+editing: IrfanView Maintain the aspect ratio 
+Compress the image: tinypng.com
+-->
+</main>
+    <!--Now see the how to go top of the page-->
+    <footer>
+    <p><a href="#">Back to Top</a></p>
+
+    <!--html semantic cheat sheet-->
+    <h3>Semantic Tags</h3>
+
+   </footer>
+  </body>
+</html>
